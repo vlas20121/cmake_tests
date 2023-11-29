@@ -1,0 +1,9 @@
+Microsoft (R) Build Engine версии 16.11.1+3e40a09f8 для .NET Framework
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+  main.cpp
+F:\HG\TestGroup\cmake_tests\symlink_test\main.cpp(8,40): error C2440: '<function-style-cast>': cannot convert from 'char' to 'std::filesystem::path' [F:\HG\TestGroup\cmake_tests\symlink_test\bin\symlink_test.vcxproj]
+F:\HG\TestGroup\cmake_tests\symlink_test\main.cpp(8,40): message : No constructor could take the source type, or constructor overload resolution was ambiguous [F:\HG\TestGroup\cmake_tests\symlink_test\bin\symlink_test.vcxproj]
+F:\HG\TestGroup\cmake_tests\symlink_test\main.cpp(8,59): error C2440: '<function-style-cast>': cannot convert from 'char' to 'std::filesystem::path' [F:\HG\TestGroup\cmake_tests\symlink_test\bin\symlink_test.vcxproj]
+F:\HG\TestGroup\cmake_tests\symlink_test\main.cpp(8,59): message : No constructor could take the source type, or constructor overload resolution was ambiguous [F:\HG\TestGroup\cmake_tests\symlink_test\bin\symlink_test.vcxproj]
+F:\HG\TestGroup\cmake_tests\symlink_test\main.cpp(8,60): error C2661: 'std::filesystem::create_symlink': no overloaded function takes 1 arguments [F:\HG\TestGroup\cmake_tests\symlink_test\bin\symlink_test.vcxproj]

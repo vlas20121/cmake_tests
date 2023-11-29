@@ -1,0 +1,1 @@
+cmake -G 2> generators.log
