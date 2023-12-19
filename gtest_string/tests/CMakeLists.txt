@@ -1,8 +1,12 @@
 cmake_minimum_required (VERSION 3.16)
 project(string_utils_test)
 
-file(GLOB_RECURSE  CPP "*.cpp")
-file(GLOB_RECURSE  H "*.h")
+#file(GLOB_RECURSE  CPP "*.cpp")
+#file(GLOB_RECURSE  H "*.h")
+file(GLOB_RECURSE  CPP "../src/*_test.cpp")
+file(GLOB_RECURSE  H "../src/*_test.h")
+
+add_compile_definitions(TESTS)
 
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 include(FetchContent)
