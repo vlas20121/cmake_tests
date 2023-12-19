@@ -6,6 +6,7 @@
 #include <chrono>
 #include <string>
 #include <vector>
+#include <cmath>
 
 int main1()
 {
@@ -64,7 +65,7 @@ static void ConfigureOmp()
     omp_set_num_threads(i_max_threads);
 }
 
-void main() {
+int main() {
     ConfigureOmp();
     long long n=getenv_int("n",1000);
     //double m = 0.1;
@@ -76,5 +77,6 @@ void main() {
 	for (int j = 1; j < 10000; j++)
         v[i]= std::sin(j*double(i)/n);
     //std::cout << "mul=" << m << "\n";
+    return 0;
 }
 
