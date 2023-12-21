@@ -16,6 +16,6 @@ TEST(isStartedWith, isStartedWith_bad)
 	std::string s="abcdefg";
 	ASSERT_TRUE( isStartedWith_bad(s.data(), s.data()+s.size(), "abcd"));
 	ASSERT_TRUE(!isStartedWith_bad(s.data(), s.data()+s.size(), "abce"));
-    ASSERT_TRUE(!isStartedWith(s.data(), s.data() + s.size(), "abcdefg12345"));
+    ASSERT_TRUE(!isStartedWith_bad(s.data(), s.data() + s.size(), "abcdefg12345"));
 }
 #endif
