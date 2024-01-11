@@ -1,5 +1,5 @@
 mkdir build
 cd build
-cmake .. > cmake.log 2>&1
+cmake --debug-trycompile .. > cmake.log 2>&1
 cmake --build . > build.log 2>&1
-bin\Debug\simplest.exe
+Debug\simplest.exe

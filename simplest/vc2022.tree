@@ -1,0 +1,77 @@
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Professional\VC\Tools
+Llvm
+	x64
+	bn
+14.29.30133\bin\Hostx64
+	arm
+	arm64
+	x64
+	x86
+
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\
+Llvm
+	ARM64
+	x64
+	bin
+	lib
+
+MSVC\14.38.33130\
+Auxiliary
+atlmfc
+atlmfc\include
+atlmfc\lib
+atlmfc\src
+atlmfc\lib\arm64
+atlmfc\src\atl
+atlmfc\src\mfc
+atlmfc\src\mfcm
+MSVC\14.38.33130\bin\
+bin\Hostx64
+bin\Hostx64\arm64
+bin\Hostx64\x64
+bin\Hostx86
+bin\Hostx86\arm64
+bin\Hostx86\x86
+
+crt
+include
+crt\src
+crt\src\arm64
+crt\src\concrt
+crt\src\linkopts
+crt\src\stl
+crt\src\vccorlib
+crt\src\vcruntime
+
+include\cliext
+include\CodeAnalysis
+include\cvt
+include\experimental
+include\Manifest
+include\msclr
+include\CodeAnalysis\ConcurrencyCheck
+include\CodeAnalysis\CppCoreCheck
+include\CodeAnalysis\EnumIndex
+include\CodeAnalysis\HResultCheck
+include\CodeAnalysis\VariantClear
+include\msclr\com
+
+lib
+lib\onecore
+lib\arm64\store
+lib\arm64\uwp
+lib\onecore\arm64
+
+modules
+
+MSVC\14.16.27023\bin\HostX64\
+	ARM
+	ARM64
+	x64
+	x86
+
+MSVC\14.29.30133\bin\HostX64
+	ARM
+	ARM64
+	x64
+	x86

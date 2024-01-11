@@ -1,0 +1,16 @@
+https://stackoverflow.com/questions/76637915/generate-vs2022-project-files-with-cmake-which-use-clang
+
+-G <generator-name>          = Specify a build system generator.
+	https://www.mankier.com/7/cmake-generators
+-T <toolset-name>            = Specify toolset name if supported by generator.
+-A <platform-name>           = Specify platform name if supported by generator.
+--toolchain <file>           = Specify toolchain file [CMAKE_TOOLCHAIN_FILE].
+
+cmake -S . -B build 
+	-G "Visual Studio 17 2022" 
+	-T="ClangCL" 
+	-D_CMAKE_TOOLCHAIN_PREFIX="ClangCL" 
+	-DCMAKE_C_COMPILER:FILEPATH="C:\Program Files\LLVM\bin\clang.exe" 
+	-DCMAKE_CXX_COMPILER:FILEPATH="C:\Program Files\LLVM\bin\clang++.exe"
+cmake The CXX compiler identification is unknown
+	https://stackoverflow.com/questions/20632860/the-cxx-compiler-identification-is-unknown
