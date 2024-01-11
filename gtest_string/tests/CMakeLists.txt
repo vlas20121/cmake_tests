@@ -1,8 +1,6 @@
 cmake_minimum_required (VERSION 3.16)
 project(string_utils_test)
 
-#file(GLOB_RECURSE  CPP "*.cpp")
-#file(GLOB_RECURSE  H "*.h")
 file(GLOB_RECURSE  CPP "../src/*_test.cpp")
 file(GLOB_RECURSE  H "../src/*_test.h")
 

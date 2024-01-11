@@ -1,4 +1,5 @@
-rem cmake -DCMAKE_BUILD_TYPE=Release -G "Unix Makefiles" -B bin > cmake.log
-cmake -G "Visual Studio 17 2022" -DCMAKE_BUILD_TYPE=Release -B bin > cmake.log 2>&1
-cmake --build bin > build.log 2>&1
+mkdir build
+cd build
+cmake .. > cmake.log 2>&1
+cmake --build . > build.log 2>&1
 bin\Debug\simplest.exe
