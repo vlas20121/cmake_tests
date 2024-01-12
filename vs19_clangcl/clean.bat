@@ -1,3 +1,1 @@
-del *.log
-del /Q /s bin
-rmdir /Q /s bin
+rmdir /Q /s build_ClangCL_ARM64_std17
