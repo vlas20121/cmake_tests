@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.16)
+project(boost_test LANGUAGES CXX)
+
+#https://cmake.org/cmake/help/latest/module/FindBoost.html
+set(Boost_USE_STATIC_LIBS OFF) 
+set(Boost_USE_MULTITHREADED ON)  
+set(Boost_USE_STATIC_RUNTIME OFF) 
+find_package(Boost 1.54.0 COMPONENTS filesystem regex)
+message('Boost_FOUND=${Boost_FOUND}')
+message('Boost_INCLUDE_DIRS=${Boost_INCLUDE_DIRS}')
+message('Boost_LIBRARIES=${Boost_LIBRARIES}')
+message('Boost_REGEX_LIBRARY=${Boost_REGEX_LIBRARY}')
+message('Boost=${Boost}')
+
+#if(${Boost_FOUND})
+  include_directories(${Boost_INCLUDE_DIRS})
+  add_executable(boost_test main.cpp) 
+  #target_link_libraries(boost_test Boost::filesystem Boost::regex)
+  target_link_libraries(boost_test ${Boost_LIBRARIES} ${Boost_PROGRAM_OPTIONS_LIBRARY} ${Boost_REGEX_LIBRARY} )
+#endif()

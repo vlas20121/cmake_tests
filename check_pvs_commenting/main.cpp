@@ -1,9 +1,8 @@
 //lakely PVS-Studio bug
 
-enum Result { Result1 = 1, Result2 = 2 };
-
 int main()
 {
+    enum Result { Result1 = 1, Result2 = 2 };
     Result result = Result1;
     switch (result)
     {

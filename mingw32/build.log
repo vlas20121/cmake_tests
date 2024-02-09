@@ -1,0 +1,7 @@
+Версия MSBuild 17.8.3+195e7f5a3 для .NET Framework
+
+  1>Checking Build System
+  Building Custom Rule D:/GitHub/TestGroup/cmake_tests/mingw32/CMakeLists.txt
+  Main.cpp
+  Main.vcxproj -> D:\GitHub\TestGroup\cmake_tests\mingw32\bin\Debug\Main.exe
+  Building Custom Rule D:/GitHub/TestGroup/cmake_tests/mingw32/CMakeLists.txt
