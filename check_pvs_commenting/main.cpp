@@ -1,4 +1,4 @@
-//lakely PVS-Studio bug
+//likely PVS-Studio bug
 
 int main()
 {
