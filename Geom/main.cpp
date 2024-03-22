@@ -175,6 +175,10 @@ using namespace Geometry;
 
 void circle_tangent_point_check(const circle& circ, const vec2& p, const vec2& t)
 {
+    //1 t on circe
+    auto l = abs(t - circ.center);
+    assert(equ_approx(l, circ.radius));
+    //2 90 grad angle
     double _dot = dot(t - circ.center, t - p);
     assert(equ_approx(_dot, 0.));
 }
