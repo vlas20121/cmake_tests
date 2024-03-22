@@ -1,4 +1,4 @@
-#include <vector>
+п»ї#include <vector>
 #include <array>
 #include <iostream>
 #include <cmath>
@@ -107,7 +107,7 @@ namespace Geometry{
         return double();
     }
 
-	using PolyLine=std::vector<vec3>;///полилиния задается как набор последовательно соединенных точек
+	using PolyLine=std::vector<vec3>;///РїРѕР»РёР»РёРЅРёСЏ Р·Р°РґР°РµС‚СЃСЏ РєР°Рє РЅР°Р±РѕСЂ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ СЃРѕРµРґРёРЅРµРЅРЅС‹С… С‚РѕС‡РµРє
 	double Distance(const PolyLine& p, const vec3& pt)
 	{
         //todo
