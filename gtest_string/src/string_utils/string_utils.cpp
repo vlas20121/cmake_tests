@@ -39,3 +39,11 @@ bool isStartedWith(const char* start, const char* end, const char* pattern)
 {
 	return isStartedWith(start, end, pattern, pattern+std::strlen(pattern));
 }
+
+/*
+#include <gtest/gtest.h>
+TEST(Dll,Test)
+{
+	ASSERT_TRUE(0);
+}
+*/

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <memory>
 
-void main() {
+void t() {
     std::unique_ptr<FILE, int(*)(FILE*)> fp(fopen("test.txt", "r"), fclose);
     std::unique_ptr<FILE, int(*)(FILE*)> fp1(fopen("test1.txt", "r"), fclose);
 
@@ -23,4 +23,23 @@ void main() {
         }
     }
 
+}
+void t_2del()
+{
+    int* pi = new int(0);
+    delete pi;
+    delete pi;
+}
+
+void t_malloc_del()
+{
+    int* pi = (int*)malloc(sizeof(int));
+        delete pi;
+    //free(pi);
+}
+
+void main() {
+    t();
+    //t_2del();
+    //t_malloc_del();
 }
