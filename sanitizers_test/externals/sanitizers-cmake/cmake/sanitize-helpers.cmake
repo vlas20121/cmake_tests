@@ -165,12 +165,17 @@ function (sanitizer_add_flags TARGET NAME PREFIX)
     # compilers will be done in add_sanitizers function.
     sanitizer_target_compilers(${TARGET} TARGET_COMPILER)
     list(LENGTH TARGET_COMPILER NUM_COMPILERS)
+    set(flag_ ${PREFIX}_${TARGET_COMPILER}_FLAGS)
+    message('flag_:' ${flag_})
+    message('*flag_:' ${${flag_}})
     if ("${${PREFIX}_${TARGET_COMPILER}_FLAGS}" STREQUAL "")
+        message(${PREFIX}_${TARGET_COMPILER}_FLAGS)
         return()
     endif()
 
     separate_arguments(flags_list UNIX_COMMAND "${${PREFIX}_${TARGET_COMPILER}_FLAGS} ${SanBlist_${TARGET_COMPILER}_FLAGS}")
     target_compile_options(${TARGET} PUBLIC ${flags_list})
+    message('target_compile_options:'${TARGET} ',' ${flags_list})
 
     separate_arguments(flags_list UNIX_COMMAND "${${PREFIX}_${TARGET_COMPILER}_FLAGS}")
     target_link_options(${TARGET} PUBLIC ${flags_list})
